@@ -203,7 +203,7 @@ sections:
 
         - certificate_url: 
           date_end: ''
-          date_start: 2021-12-25''
+          date_start: '2021-12-25'
           description: ''
           organization: University of Science and Technology of China
           organization_url: https://en.ustc.edu.cn/
@@ -235,7 +235,7 @@ sections:
           organization: Chinese Physical Society
           organization_url: http://www.cps-net.org.cn/
           title: Provincial First Prize in 35th Chinese Physics Olympiad (CPhO)
-          url: 'https://cpho.pku.edu.cn/'
+          # url: 'https://cpho.pku.edu.cn/'
 
     design:
       columns: '2'
