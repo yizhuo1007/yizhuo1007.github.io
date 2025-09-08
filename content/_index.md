@@ -201,14 +201,14 @@ sections:
           title: Basic Life Support (BLS) Provider
           url: ''
 
-        # - certificate_url: 
-        #   date_end: ''
-        #   date_start: '2022'
-        #   description: 'Excellent Student Scholarship (10%)'
-        #   organization: University of Science and Technology of China
-        #   organization_url: https://en.ustc.edu.cn/
-        #   title: Silver Award of Excellent Student Scholarship
-        #   url: ''  
+        - certificate_url: 
+          date_end: ''
+          date_start: '2022-1-1'
+          description: ''
+          organization: University of Science and Technology of China
+          organization_url: https://en.ustc.edu.cn/
+          title: Silver Award of Excellent Student Scholarship
+          url: ''  
 
         - certificate_url: 
           date_end: ''
@@ -230,7 +230,7 @@ sections:
 
         - certificate_url: 
           date_end: ''
-          date_start: '2018-10'
+          date_start: '2018-10-01'
           description: ''
           organization: Chinese Physical Society
           organization_url: http://www.cps-net.org.cn/
