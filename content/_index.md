@@ -206,36 +206,36 @@ sections:
           date_start: '2022'
           description: ''
           organization: University of Science and Technology of China
-          organization_url: https://en.ustc.edu.cn/
+          organization_url:
           title: Silver Award of Excellent Student Scholarship
           url: ''  
 
-        # - certificate_url: 
-        #   date_end: ''
-        #   date_start: '2021-12-25'
-        #   description: ''
-        #   organization: University of Science and Technology of China
-        #   organization_url: https://en.ustc.edu.cn/
-        #   title: 1st Place in 17th Physical Innovation Research Experimental Paper Competition
-        #   url: ''
+        - certificate_url: 
+          date_end: ''
+          date_start: '2021-12-25'
+          description: ''
+          organization: University of Science and Technology of China
+          organization_url:
+          title: 1st Place in 17th Physical Innovation Research Experimental Paper Competition
+          url: ''
         
-        # - certificate_url: 
-        #   date_end: ''
-        #   date_start: '2020-12-23'
-        #   description: ''
-        #   organization: CUEP
-        #   organization_url: https://cuep.nenu.edu.cn/
-        #   title: Second Prize in 6th China Undergraduate Physics Experiment Competition (CUPEC)
-        #   url: ''
+        - certificate_url: 
+          date_end: ''
+          date_start: '2020-12-23'
+          description: ''
+          organization: CUEP
+          organization_url:
+          title: Second Prize in 6th China Undergraduate Physics Experiment Competition (CUPEC)
+          url: ''
 
-        # - certificate_url: 
-        #   date_end: ''
-        #   date_start: '2018-10'
-        #   description: ''
-        #   organization: Chinese Physical Society
-        #   organization_url: http://www.cps-net.org.cn/
-        #   title: Provincial First Prize in 35th Chinese Physics Olympiad (CPhO)
-        #   url: ''
+        - certificate_url: 
+          date_end: ''
+          date_start: '2018-10'
+          description: ''
+          organization: Chinese Physical Society
+          organization_url:
+          title: Provincial First Prize in 35th Chinese Physics Olympiad (CPhO)
+          url: ''
 
     design:
       columns: '2'
