@@ -193,7 +193,7 @@ sections:
           url: ''
 
         - certificate_url: 
-          date_end: '2023'
+          date_end: ''
           date_start: '2022'
           description: ''
           organization: University of Science and Technology of China
@@ -217,7 +217,7 @@ sections:
           organization: CUEP
           organization_url: https://cuep.nenu.edu.cn/
           title: Second Prize in 6th China Undergraduate Physics Experiment Competition (CUPEC)
-          url: 'https://wlsycx.moocollege.com/home/homepage'
+          url: ''
 
         - certificate_url: 
           date_end: ''
@@ -235,7 +235,7 @@ sections:
           organization: Chinese Physical Society
           organization_url: http://www.cps-net.org.cn/
           title: Provincial First Prize in 35th Chinese Physics Olympiad (CPhO)
-          # url: 'https://cpho.pku.edu.cn/'
+          url: ''
 
     design:
       columns: '2'
