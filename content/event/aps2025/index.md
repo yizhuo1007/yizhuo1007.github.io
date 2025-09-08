@@ -1,7 +1,7 @@
 ---
 title: Securing HHL Quantum Algorithm against Quantum Computer Attacks
 
-event: Joint March Meeting and April Meeting: Global Physics Summit 2025
+event: Joint March Meeting and April Meeting - Global Physics Summit 2025
 event_url: https://www.aps.org/events/2025/joint-meeting
 
 location: Joint March Meeting and April Meeting: Global Physics Summit 2025
