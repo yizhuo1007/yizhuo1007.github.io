@@ -203,7 +203,7 @@ sections:
 
         - certificate_url: 
           date_end: ''
-          date_start: '2022-1-1'
+          date_start: '2022-01-01'
           description: ''
           organization: University of Science and Technology of China
           organization_url: https://en.ustc.edu.cn/
