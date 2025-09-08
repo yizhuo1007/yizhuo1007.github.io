@@ -98,7 +98,9 @@ sections:
           location: Hefei, China
           date_start: '2019-09-01'
           date_end: '2023-05-31'
-          description: |1-
+          description: |2-
+              Major in Atomic Physics, Minor in Computer Science
+
               Teaching Asistant:
               * Mechanics B
 
@@ -212,7 +214,7 @@ sections:
           date_end: ''
           date_start: '2020-12-23'
           description: ''
-          # organization:
+          organization: CUEP
           organization_url: https://cuep.nenu.edu.cn/
           title: Second Prize in 6th China Undergraduate Physics Experiment Competition (CUPEC)
           url: 'https://wlsycx.moocollege.com/home/homepage'
