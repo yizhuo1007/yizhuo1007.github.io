@@ -85,5 +85,5 @@ email: 'yizhuo.tan@yale.edu'
 highlight_name: true
 ---
 
-I am a third-year Ph.D. student dedicated to exploring the critical challenges in quantum computing security and systems. My research, conducted jointly at the Quantum Systems Lab, Yale University, and the Computer Architecture and Security Lab, Northwestern University, investigates the vulnerabilities within quantum computing hardware and algorithms. 
+I am a third-year Ph.D. student dedicated to exploring the critical challenges in quantum computing security and systems. My research, conducted jointly at the Quantum Systems Lab, Yale University, and the Computer Architecture and Security Lab, Northwestern University, investigates the vulnerabilities within quantum computing hardware and algorithms. I would like to explore ovlivious QRAM and QEC in the future!
 {style="text-align: justify;"}
