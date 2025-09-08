@@ -194,6 +194,15 @@ sections:
 
         - certificate_url: 
           date_end: ''
+          date_start: '2022-03-31'
+          description: 'The AHA’s BLS course trains participants to promptly recognize several life-threatening emergencies, give high-quality chest compressions, deliver appropriate ventilations and provide early use of an AED. Reflects science and education from the American Heart Association Guidelines Update for CPR and Emergency Cardiovascular Care (ECC).'
+          organization: American Heart Association
+          organization_url: https://www.heart.org/
+          title: Basic Life Support (BLS) Provider
+          url: ''
+
+        - certificate_url: 
+          date_end: ''
           date_start: '2022'
           description: ''
           organization: University of Science and Technology of China
@@ -217,15 +226,6 @@ sections:
           organization: CUEP
           organization_url: https://cuep.nenu.edu.cn/
           title: Second Prize in 6th China Undergraduate Physics Experiment Competition (CUPEC)
-          url: ''
-
-        - certificate_url: 
-          date_end: ''
-          date_start: '2022-03-31'
-          description: 'The AHA’s BLS course trains participants to promptly recognize several life-threatening emergencies, give high-quality chest compressions, deliver appropriate ventilations and provide early use of an AED. Reflects science and education from the American Heart Association Guidelines Update for CPR and Emergency Cardiovascular Care (ECC).'
-          organization: American Heart Association
-          organization_url: https://www.heart.org/
-          title: Basic Life Support (BLS) Provider
           url: ''
 
         - certificate_url: 
