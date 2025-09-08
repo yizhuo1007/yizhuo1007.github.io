@@ -94,8 +94,8 @@ sections:
         - title: Undergraduate Research Assistant & Teaching Fellow
           company: University of Science and Technology of China (USTC)
           company_url: 'https://en.ustc.edu.cn/'
-          company_logo: 
-          location: 
+          company_logo: ustc-logo
+          location: Hefei, China
           date_start: '2019-09-01'
           date_end: '2023-05-31'
           description: |1-
@@ -184,56 +184,56 @@ sections:
         - certificate_url: 
           date_end: ''
           date_start: '2025-04-28'
-          description: ''
+          description: 'NEHWS Day brings together many students, researchers, practitioners, and industry partners in the field of hardware security to share their work and foster new ideas.'
           organization: 2025 New England Hardware Security Day
           organization_url: https://nehws.org/
           title: Best Poster Award - 1st Place
           url: ''
 
-        # - certificate_url: 
-        #   date_end: ''
-        #   date_start: ''
-        #   description: ''
-        #   organization: University of Science and Technology of China
-        #   organization_url: https://en.ustc.edu.cn/
-        #   title: 1st Place in 17th Physical Innovation Research Experimental Paper Competition
-        #   url: ''
+        - certificate_url: 
+          date_end: '2023'
+          date_start: '2022'
+          description: ''
+          organization: University of Science and Technology of China
+          organization_url: https://en.ustc.edu.cn/
+          title: Silver Award of Excellent Student Scholarship
+          url: ''  
+
+        - certificate_url: 
+          date_end: ''
+          date_start: 2021-12-25''
+          description: ''
+          organization: University of Science and Technology of China
+          organization_url: https://en.ustc.edu.cn/
+          title: 1st Place in 17th Physical Innovation Research Experimental Paper Competition
+          url: ''
         
-        # - certificate_url: 
-        #   date_end: ''
-        #   date_start: ''
-        #   description: ''
-        #   organization:
-        #   organization_url:
-        #   title: Second Prize in 6th Chinese Undergraduate Physics Experiment Competition
-        #   url: ''
+        - certificate_url: 
+          date_end: ''
+          date_start: '2020-12-23'
+          description: ''
+          # organization:
+          organization_url: https://cuep.nenu.edu.cn/
+          title: Second Prize in 6th China Undergraduate Physics Experiment Competition (CUPEC)
+          url: 'https://wlsycx.moocollege.com/home/homepage'
 
-        # - certificate_url: 
-        #   date_end: ''
-        #   date_start: ''
-        #   description: ''
-        #   organization: University of Science and Technology of China
-        #   organization_url: https://en.ustc.edu.cn/
-        #   title: Silver Award of Excellent Student Scholarship
-        #   url: ''  
+        - certificate_url: 
+          date_end: ''
+          date_start: '2022-03-31'
+          description: 'The AHA’s BLS course trains participants to promptly recognize several life-threatening emergencies, give high-quality chest compressions, deliver appropriate ventilations and provide early use of an AED. Reflects science and education from the American Heart Association Guidelines Update for CPR and Emergency Cardiovascular Care (ECC).'
+          organization: American Heart Association
+          organization_url: https://www.heart.org/
+          title: Basic Life Support (BLS) Provider
+          url: ''
 
-        # - certificate_url: 
-        #   date_end: ''
-        #   date_start: ''
-        #   description: ''
-        #   organization:
-        #   organization_url:
-        #   title:
-        #   url: ''
-
-        # - certificate_url: 
-        #   date_end: ''
-        #   date_start: ''
-        #   description: ''
-        #   organization: University of Science and Technology of China
-        #   organization_url: https://en.ustc.edu.cn/
-        #   title: Provincial First Prize in 35th Chinese Physics Olympiad
-        #   url: ''
+        - certificate_url: 
+          date_end: ''
+          date_start: '2018-10'
+          description: ''
+          organization: Chinese Physical Society
+          organization_url: http://www.cps-net.org.cn/
+          title: Provincial First Prize in 35th Chinese Physics Olympiad (CPhO)
+          url: 'https://cpho.pku.edu.cn/'
 
     design:
       columns: '2'
