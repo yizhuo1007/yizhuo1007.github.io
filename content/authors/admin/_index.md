@@ -53,15 +53,15 @@ social:
   - icon: twitter
     icon_pack: fab
     link: https://x.com/yizhuo1007
-    label: Follow me on Twitter
-    display:
-      header: true
-    - icon: instagram
+    # label: Follow me on Twitter
+    # display:
+    #   header: true
+  - icon: instagram
     icon_pack: fab
     link: https://www.instagram.com/yizhuo_10078/
-    label: Follow me on Instagram
-    display:
-      header: true
+    # label: Follow me on Instagram
+    # display:
+    #   header: true
   - icon: graduation-cap # Alternatively, use `google-scholar` icon from `ai` icon pack or graduation-cap
     icon_pack: fas
     link: https://scholar.google.com/citations?hl=en&user=bSD_WykAAAAJ
@@ -76,7 +76,7 @@ social:
   # # and uncomment the lines below.
   - icon: cv
     icon_pack: ai
-    link: uploads/resume.pdf
+    # link: uploads/resume.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: 'yizhuo.tan@yale.edu'
