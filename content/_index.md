@@ -190,50 +190,50 @@ sections:
           title: Best Poster Award - 1st Place
           url: ''
 
-        - certificate_url: 
-          date_end: ''
-          date_start: ''
-          description: ''
-          organization: University of Science and Technology of China
-          organization_url: https://en.ustc.edu.cn/
-          title: 1st Place in 17th Physical Innovation Research Experimental Paper Competition
-          url: ''
+        # - certificate_url: 
+        #   date_end: ''
+        #   date_start: ''
+        #   description: ''
+        #   organization: University of Science and Technology of China
+        #   organization_url: https://en.ustc.edu.cn/
+        #   title: 1st Place in 17th Physical Innovation Research Experimental Paper Competition
+        #   url: ''
         
-        - certificate_url: 
-          date_end: ''
-          date_start: ''
-          description: ''
-          organization:
-          organization_url:
-          title: Second Prize in 6th Chinese Undergraduate Physics Experiment Competition
-          url: ''
+        # - certificate_url: 
+        #   date_end: ''
+        #   date_start: ''
+        #   description: ''
+        #   organization:
+        #   organization_url:
+        #   title: Second Prize in 6th Chinese Undergraduate Physics Experiment Competition
+        #   url: ''
 
-        - certificate_url: 
-          date_end: ''
-          date_start: ''
-          description: ''
-          organization: University of Science and Technology of China
-          organization_url: https://en.ustc.edu.cn/
-          title: Silver Award of Excellent Student Scholarship
-          url: ''  
+        # - certificate_url: 
+        #   date_end: ''
+        #   date_start: ''
+        #   description: ''
+        #   organization: University of Science and Technology of China
+        #   organization_url: https://en.ustc.edu.cn/
+        #   title: Silver Award of Excellent Student Scholarship
+        #   url: ''  
 
-        - certificate_url: 
-          date_end: ''
-          date_start: ''
-          description: ''
-          organization:
-          organization_url:
-          title:
-          url: ''
+        # - certificate_url: 
+        #   date_end: ''
+        #   date_start: ''
+        #   description: ''
+        #   organization:
+        #   organization_url:
+        #   title:
+        #   url: ''
 
-        - certificate_url: 
-          date_end: ''
-          date_start: ''
-          description: ''
-          organization: University of Science and Technology of China
-          organization_url: https://en.ustc.edu.cn/
-          title: Provincial First Prize in 35th Chinese Physics Olympiad
-          url: ''
+        # - certificate_url: 
+        #   date_end: ''
+        #   date_start: ''
+        #   description: ''
+        #   organization: University of Science and Technology of China
+        #   organization_url: https://en.ustc.edu.cn/
+        #   title: Provincial First Prize in 35th Chinese Physics Olympiad
+        #   url: ''
 
     design:
       columns: '2'
