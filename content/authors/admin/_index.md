@@ -27,7 +27,7 @@ organizations:
 # Interests to show in About widget
 interests:
   - Quantum Computing Security
-  - Quantum Computing System
+  - Quantum Computing Architecture
 
 # Education to show in About widget
 education:
