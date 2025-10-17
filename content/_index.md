@@ -185,6 +185,15 @@ sections:
       items:
         - certificate_url: 
           date_end: ''
+          date_start: '2025-10-17'
+          description: 'The Quantum Security and Privacy (QSec) Workshop aims to establish a focused venue—co-located with ACM CCS 2025—dedicated to examining both the novel threats introduced by quantum technologies and the security of the quantum systems themselves. By bringing together experts from traditional security domains (e.g., post-quantum cryptography, network security) and quantum computing research (e.g., quantum key distribution, quantum architectures), QSec provides a forum for:Expose Emerging Quantum-Era Threats.Analyze how adversaries with quantum or quantum-enhanced capabilities can undermine both classical and quantum systems.Showcase Innovative Defenses. Present hybrid cryptographic schemes, quantum-native protocols (e.g., QKD), and hardware-level protections. Bridge Disparate Communities. Foster collaboration among researchers in cryptography, networking, architecture, and quantum information science. Chart a Roadmap for Future Research. Through keynotes, technical sessions, and blue-sky discussions, identify long-term challenges and research directions.'
+          organization: ACM QSec: Quantum Security and Privacy Workshop
+          organization_url: https://acm-qsec.com/
+          title: Best Paper Award
+          url: ''
+
+        - certificate_url: 
+          date_end: ''
           date_start: '2025-04-28'
           description: 'NEHWS Day brings together many students, researchers, practitioners, and industry partners in the field of hardware security to share their work and foster new ideas.'
           organization: 2025 New England Hardware Security Day
