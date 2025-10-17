@@ -35,7 +35,7 @@ featured: false
 # links:
 # - name: URL
 #   url: ""
-url_pdf: ''
+url_pdf: 'https://caslab.io/publications/tan2025know.pdf'
 url_code: ''
 url_dataset: ''
 url_poster: ''
