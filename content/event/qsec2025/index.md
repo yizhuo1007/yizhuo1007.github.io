@@ -1,7 +1,7 @@
 ---
-title: I Know What You Are Reading: Evaluating Readout Crosstalk in Cloud-based Quantum Computers
+title: I Know What You Are Reading:Evaluating Readout Crosstalk in Cloud-based Quantum Computers
 
-event: ACM QSec: Quantum Security and Privacy Workshop
+event: ACM QSec:Quantum Security and Privacy Workshop
 event_url: https://acm-qsec.com/
 
 location: The ACM Conference on Computer and Communications Security (ACM CCS 2025)
