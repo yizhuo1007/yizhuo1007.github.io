@@ -7,8 +7,8 @@ projects:
       I also analyzed identification limits and evaluated refinements for cases with low identification accuracy.
     papers:
       - reference: /publication/qldpc2026
-        label: Manuscript · 2026
-        details_label: Manuscript details
+        label: arXiv preprint · 2026
+        details_label: Paper details
   - id: epar
     image:
       filename: research/epar-workflow.png
