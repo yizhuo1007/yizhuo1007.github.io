@@ -27,7 +27,7 @@ sections:
   - block: about.biography
     id: about
     content:
-      title: Biography
+      title: ''
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: admin
   # - block: features
@@ -50,69 +50,89 @@ sections:
     id: experience
     content:
       title: Experience
-      # Date format for experience
-      #   Refer to https://wowchemy.com/docs/customization/#date-format
-      date_format: Jan 2006
-      # Experiences.
-      #   Add/remove as many `experience` items below as you like.
-      #   Required fields are `title`, `company`, and `date_start`.
-      #   Leave `date_end` empty if it's your current employer.
-      #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
+      date_format: January 2006
       items:
-        # - title: Gen AI Intern
-        #   company: Scale AI
-        #   company_url: 'https://scale.com/'
-        #   company_logo: scale-ai-logo
-        #   location: New York, New York
-        #   date_start: '2025-06-26'
-        #   date_end: ''
-        #   description: |2-
-        #       Benchmarked generative LLM reasoning on Olympiad-level tasks — conducted research to analyze AI reasoning capabilities, designed experiments to uncover failure modes, and inform model architecture improvements.
-
-        - title: Graduate Research Assistant & Teaching Fellow
+        - title: Doctoral Research / Research Assistant
           company: Yale University
           company_url: 'https://www.yale.edu/'
           company_logo: yale-logo-blue
-          location: New Haven, Connecticut
-          date_start: '2023-08-26'
+          date_start: '2023-09-01'
           date_end: ''
-          # description: |2-
-          #     Responsibilities include:
 
-          #     * Analysing
-          #     * Modelling
-          #     * Deploying
-          description: |2-
-              Research Asistant:
-              * Member of [Computer Architecture and Security Lab (CASLAB).](https://caslab.io/)
-              * Member of [Quantum Systems Lab (QSL).](https://www.yongshanding.com/home.html)
+        - title: Research Visit
+          company: Northwestern University
+          company_url: 'https://www.northwestern.edu/'
+          company_logo: northwestern-logo.png
+          date_start: '2026-07-01'
+          date_end: '2026-09-01'
 
-              Teaching Asistant:
-              * EENG 200--Introduction to Electronics (Jung Han)
-              * EENG 201--Introduction to Computer Engineering (Priya Panda)
-
-        - title: Undergraduate Research Assistant & Teaching Fellow
+        - title: Undergraduate Research Assistant
           company: University of Science and Technology of China (USTC)
           company_url: 'https://en.ustc.edu.cn/'
           company_logo: ustc-logo
-          location: Hefei, China
-          date_start: '2019-09-01'
-          date_end: '2023-05-31'
+          date_start: '2021-09-01'
+          date_end: '2022-03-01'
+
+        - title: Undergraduate Experimental Project
+          company: University of Science and Technology of China (USTC)
+          company_url: 'https://en.ustc.edu.cn/'
+          company_logo: ustc-logo
+          date_start: '2021-09-01'
+          date_end: '2021-12-01'
           description: |2-
-              Major in Atomic Physics, Minor in Computer Science
-
-              Teaching Asistant:
-              * Mechanics B
-
+              First Prize, 17th Physical Innovation Research Experimental Paper Competition, USTC (2021).
+    design:
+      columns: '2'
+  - block: selected_research
+    id: research
+    content:
+      title: Selected Research
+    design:
+      columns: '1'
+  - block: teaching_cards
+    id: teaching
+    content:
+      title: Teaching
+      items:
+        - title: 'PHYS 1650L: General Physics Laboratory'
+          url: 'https://courses.yale.edu/?details&srcdb=202603&crn=12192'
+          school: Yale University
+          school_url: https://www.yale.edu/
+          school_logo: yale-logo-blue.svg
+          role: Teaching Assistant
+          term: Fall 2026
+          instructors: 'Instructors: Sean Barrett, Mehdi Ghiassi-Nejad, Caitlin Hansen, and Alison Sweeney'
+        - title: 'EENG 201: Introduction to Computer Engineering'
+          url: 'https://courses.yale.edu/?details&srcdb=202501&crn=20234'
+          school: Yale University
+          school_url: https://www.yale.edu/
+          school_logo: yale-logo-blue.svg
+          role: Teaching Assistant
+          term: Spring 2025
+          instructors: 'Instructor: Priya Panda'
+        - title: 'EENG 200: Introduction to Electronics'
+          url: 'https://courses.yale.edu/?details&srcdb=202403&crn=11113'
+          school: Yale University
+          school_url: https://www.yale.edu/
+          school_logo: yale-logo-blue.svg
+          role: Teaching Assistant
+          term: Fall 2024
+          instructors: 'Instructor: Jung Han'
+        - title: Mechanics B
+          school: University of Science and Technology of China (USTC)
+          school_url: https://en.ustc.edu.cn/
+          school_logo: ustc-logo.svg
+          role: Undergraduate Teaching Assistant
+          term: Fall 2022
     design:
       columns: '2'
   - block: collection
     id: publications
     content:
-      title: Recent Publications
+      title: Publications
       text: |-
         {{% callout note %}}
-        Quickly discover relevant content by [filtering publications](./publication/).
+        See the [complete publication list](./publication/), including peer-reviewed papers and preprints.
         {{% /callout %}}
       filters:
         folders:
@@ -162,7 +182,9 @@ sections:
   - block: collection
     id: presentations
     content:
-      title: Recent & Upcoming Talks
+      title: Talks
+      archive:
+        text: See all talks
       filters:
         folders:
           - event
@@ -173,10 +195,10 @@ sections:
     id: accomplishments
     content:
       # Note: `&shy;` is used to add a 'soft' hyphen in a long heading.
-      title: 'Accomplish&shy;ments'
+      title: Awards
       subtitle:
       # Date format: https://wowchemy.com/docs/customization/#date-format
-      date_format: Jan 2006
+      date_format: "2006"
       # Accomplishments.
       #   Add/remove as many `item` blocks below as you like.
       #   `title`, `organization`, and `date_start` are the required parameters.
@@ -186,38 +208,30 @@ sections:
         - certificate_url: 
           date_end: ''
           date_start: '2025-10-17'
-          description: 'The Quantum Security and Privacy (QSec) Workshop aims to establish a focused venue—co-located with ACM CCS 2025—dedicated to examining both the novel threats introduced by quantum technologies and the security of the quantum systems themselves. By bringing together experts from traditional security domains and quantum computing research, QSec provides a forum for:Expose Emerging Quantum-Era Threats.Analyze how adversaries with quantum or quantum-enhanced capabilities can undermine both classical and quantum systems.Showcase Innovative Defenses. Present hybrid cryptographic schemes, quantum-native protocols, and hardware-level protections. Bridge Disparate Communities. Foster collaboration among researchers in cryptography, networking, architecture, and quantum information science. Chart a Roadmap for Future Research. Through keynotes, technical sessions, and blue-sky discussions, identify long-term challenges and research directions.'
-          organization: ACM QSec:Quantum Security and Privacy Workshop
-          organization_url: https://acm-qsec.com/
+          description: '[I Know What You Are Reading: Evaluating Readout Crosstalk in Cloud-based Quantum Computers](/publication/qsec2025/)'
+          organization: QSec@CCS
+          organization_url: https://www.sigsac.org/ccs/CCS2025/events/
           title: Best Paper Award
-          url: ''
+          url: '/publication/qsec2025/'
 
         - certificate_url: 
           date_end: ''
-          date_start: '2025-04-28'
-          description: 'NEHWS Day brings together many students, researchers, practitioners, and industry partners in the field of hardware security to share their work and foster new ideas.'
-          organization: 2025 New England Hardware Security Day
-          organization_url: https://nehws.org/
-          title: Best Poster Award - 1st Place
-          url: ''
-
-        - certificate_url: 
-          date_end: ''
-          date_start: '2022-03-31'
-          description: 'The AHA’s BLS course trains participants to promptly recognize several life-threatening emergencies, give high-quality chest compressions, deliver appropriate ventilations and provide early use of an AED. Reflects science and education from the American Heart Association Guidelines Update for CPR and Emergency Cardiovascular Care (ECC).'
-          organization: American Heart Association
-          organization_url: https://www.heart.org/
-          title: Basic Life Support (BLS) Provider
-          url: ''
+          date_start: '2025-04-18'
+          description: '[Securing HHL Quantum Algorithm against Quantum Computer Attacks](/publication/hasp2025/)'
+          organization: New England Hardware Security Day
+          organization_url: https://nehws.org/archive/
+          title: Best Poster Award – 1st Place
+          url: '/publication/hasp2025/'
 
         - certificate_url: 
           date_end: ''
           date_start: '2022-01-01'
+          date_text: '2022, 2021'
           description: ''
           organization: University of Science and Technology of China
           organization_url: https://en.ustc.edu.cn/
-          title: Silver Award of Excellent Student Scholarship
-          url: ''  
+          title: Silver Award of Excellent Student Scholarship (Top 2%)
+          url: ''
 
         - certificate_url: 
           date_end: ''
@@ -227,7 +241,7 @@ sections:
           organization_url: https://en.ustc.edu.cn/
           title: 1st Place in 17th Physical Innovation Research Experimental Paper Competition
           url: ''
-        
+
         - certificate_url: 
           date_end: ''
           date_start: '2020-12-23'
@@ -246,6 +260,37 @@ sections:
           title: Provincial First Prize in 35th Chinese Physics Olympiad (CPhO)
           url: ''
 
+    design:
+      columns: '2'
+  - block: accomplishments
+    id: certifications
+    content:
+      title: Beyond Research
+      date_format: "2006"
+      sort_by_date: false
+      items:
+        - title: Meet Beau
+          image: community/beau-photo-crop.jpg
+          image_alt: Beau
+          image_style: portrait
+          description_inline: true
+          description: >-
+            My super friendly cat and self-appointed research supervisor. Whatever I’m doing, he’s convinced it would be better if we did it together.
+        - title: Volunteer
+          organization: Companion Pet Rescue
+          date_text: '2026'
+          organization_logo: companion-pet-rescue.png
+          organization_url: https://cprdogs.com/
+          description: ''
+        - certificate_url: 
+          date_end: ''
+          date_start: '2022-03-31'
+          description: ''
+          organization: American Heart Association
+          organization_logo: american-heart-association.svg
+          organization_url: https://www.heart.org/
+          title: Basic Life Support (BLS) Provider
+          url: ''
     design:
       columns: '2'
   # - block: portfolio
@@ -300,17 +345,17 @@ sections:
       # phone: 888 888 88 88
       # appointment_url: 'https://calendly.com'
       address:
-        street: 10 Hillhouse Avenue
+        street: 51 Prospect Street
         city: New Haven
         region: CT
-        postcode: '06520'
+        postcode: '06511'
         country: United States
         country_code: US
-      directions: 5th Floor, Dunham Laboratory
+      directions: 5th Floor, Arthur K. Watson Hall (AKW), Yale University
       # Choose a map provider in `params.yaml` to show a map from these coordinates
       coordinates:
-        latitude: '41.3123'
-        longitude: '-72.9244' 
+        latitude: '41.3130868'
+        longitude: '-72.9248501' 
       # office_hours:
       #   - 'Monday 10:00 to 13:00'
       #   - 'Wednesday 09:00 to 10:00'

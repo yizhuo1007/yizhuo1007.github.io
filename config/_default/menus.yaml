@@ -7,27 +7,39 @@ main:
   - name: Home
     url: '#about'
     weight: 10
-  - name: Experiences
+  - name: Experience
     url: '#experience'
     weight: 20
+  - name: Research
+    url: '#research'
+    weight: 22
+  - name: Teaching
+    url: '#teaching'
+    weight: 25
   - name: Publications
     url: '#publications'
     weight: 30
   # - name: Posts
   #   url: '#posts'
   #   weight: 40
-  - name: Presentations
+  - name: Talks
     url: '#presentations'
     weight: 40
-  - name: Accomplishments
+  - name: Awards
     url: '#accomplishments'
     weight: 50
   # - name: Talks
   #   url: '#talks'
   #   weight: 40
+  - name: Beyond Research
+    url: '#certifications'
+    weight: 55
   - name: Contact
     url: '#contact'
     weight: 60
+  - name: CV
+    url: '/uploads/yizhuo-tan-cv.pdf'
+    weight: 70
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/uploads/resume.pdf` and uncomment the lines below.

@@ -1,0 +1,80 @@
+{{/* Wowchemy Blocks: Accomplishments */}}
+{{/* Documentation: https://wowchemy.com/blocks/ */}}
+{{/* License: https://github.com/wowchemy/wowchemy-hugo-themes/blob/main/LICENSE.md */}}
+
+{{/* Initialise */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $columns := $block.design.columns | default "1" }}
+
+<!-- Accomplishments widget -->
+<div class="col-12 {{if eq $columns "2"}}col-lg-8{{end}}">
+  {{ with $block.content.text }}{{ . | emojify | $page.RenderString }}{{ end }}
+
+  {{ if $block.content.items }}
+  {{ $items := $block.content.items }}
+  {{ if ne $block.content.sort_by_date false }}
+    {{ $items = sort $items ".date_start" "desc" }}
+  {{ end }}
+  {{ range $idx, $key := $items }}
+    <div class="card experience course{{ if eq .image_style "portrait" }} personal-profile-card{{ end }}">
+      <div class="card-body">
+        {{- $logo_filename := .organization_logo | default (printf "%s.svg" (replace (lower (.organization | default "")) " " "_")) -}}
+        {{- $image_path := printf "media/icons/brands/%s" $logo_filename -}}
+        {{- with .image }}{{ $image_path = printf "media/%s" . }}{{ end -}}
+        {{- $svg_icon := resources.Get $image_path -}}
+        {{- if $svg_icon }}
+        {{- if eq .image_style "portrait" }}{{ $svg_icon = $svg_icon.Fit "256x256 webp" }}{{ end -}}
+        <div class="d-flex align-content-start">
+          <div class="organization-logo-wrap mr-3">
+            {{- with .organization_url}}<a href="{{.}}" target="_blank" rel="noopener">{{end -}}
+            <img class="organization-logo" src="{{ $svg_icon.RelPermalink }}" width="56" height="56" alt="{{ (.image_alt | default .organization | default .title) | plainify }}" loading="lazy">
+            {{- with .organization_url}}</a>{{end -}}
+          </div>
+          <div>
+        {{ end }}
+
+            {{- with .url -}}<a href="{{.}}" target="_blank" rel="noopener">{{- end -}}
+            <div class="section-subheading card-title exp-title text-muted my-0">{{.title | markdownify | emojify}}</div>
+            {{- with .url -}}</a>{{- end -}}
+
+            {{ if or .organization .date_start .date_text }}
+            <div class="card-subtitle my-0 article-metadata">
+              {{- with .organization_url}}<a href="{{.}}" target="_blank" rel="noopener">{{end -}}
+              {{- .organization | markdownify | emojify -}}
+              {{- with .organization_url}}</a>{{end -}}
+
+              {{ if or .date_text .date_start }}
+              <span class="middot-divider"></span>
+              {{ with .date_text }}{{ . }}{{ else }}{{ (time .date_start) | time.Format ($block.content.date_format | default "Jan 2006") }}{{ end }}
+              {{ if .date_end}}
+              – {{ (time .date_end) | time.Format ($block.content.date_format | default "Jan 2006") }}
+              {{end}}
+              {{ end }}
+            </div>
+            {{ end }}
+            {{ if .description_inline }}
+              {{ with .description }}<div class="card-subtitle my-0 article-metadata">{{ . | markdownify | emojify }}</div>{{ end }}
+            {{ end }}
+
+        {{- if $svg_icon}}
+          </div>
+        </div>
+        {{end}}
+
+        {{ if not .description_inline }}
+          {{with .description}}
+            <div class="card-text">{{. | markdownify | emojify}}</div>
+          {{end}}
+        {{ end }}
+
+        {{ with .certificate_url }}
+          <a class="card-link" href="{{.}}" target="_blank" rel="noopener">
+            {{ i18n "see_certificate" | default "See certificate" }}
+          </a>
+        {{ end }}
+      </div>
+    </div>
+  {{end}}
+  {{end}}
+</div>

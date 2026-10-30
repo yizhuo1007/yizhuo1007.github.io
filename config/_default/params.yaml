@@ -18,8 +18,8 @@ marketing:
     site_type: Person
     local_business_type: ''
     org_name: ''
-    description: 'A highly-customizable Hugo academic resume theme powered by Wowchemy website builder.'
-    twitter: 'wowchemy'
+    description: 'Yizhuo Tan is a PhD candidate in Computer Science at Yale University, researching quantum computer architecture, error correction, reliability, security, and privacy.'
+    twitter: 'yizhuo1007'
   analytics:
     google_analytics: ''
     baidu_tongji: ''
@@ -68,7 +68,7 @@ features:
   privacy_pack:
     enable: false
   repository:
-    url: 'https://github.com/<username>/<repository>'
+    url: 'https://github.com/yizhuo1007/yizhuo1007.github.io'
     content_dir: content
     branch: main
   avatar:

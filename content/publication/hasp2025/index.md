@@ -1,79 +1,15 @@
 ---
 title: "Securing HHL Quantum Algorithm against Quantum Computer Attacks"
-authors:
-- admin
-- Hrvoje Kukina
-- Jakub Szefer
-
-author_notes:
-- "Equal contribution"
-- "Equal contribution"
-- "Equal contribution"
-date: ''
-doi: 
-
-# Schedule page publish date (NOT publication's date).
-publishDate: ''
-
-# Publication type.
-# Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
-# 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
-# 7 = Thesis; 8 = Patent
+authors: ["admin", "Hrvoje Kukina", "Jakub Szefer"]
+date: "2025-10-19"
 publication_types: ["1"]
-
-# Publication name and optional abbreviated publication name.
-publication: "Hardware and Architectural Support for Security and Privacy (HASP) 2025"
-publication_short: 
-
-abstract: ''
-
-# Summary. An optional shortened abstract.
-# summary: 
-
-tags: [Quantum Computing Security, Hardware attacks and countermeasures]
-# - Source Themes
+publication: "14th International Workshop on Hardware and Architectural Support for Security and Privacy (HASP@MICRO)"
+publication_short: "HASP@MICRO 2025"
+publication_group: "peer-reviewed"
+doi: "10.1145/3768725.3768736"
+abstract: "The advent of shared, cloud-based quantum computers introduces critical security vulnerabilities. This work identifies and demonstrates two novel attacks against the important HHL algorithm. The two attacks are the Improper Initialization Attack (IIA) and the Higher Energy Attack (HEA), and this work shows that both can be abused to cause HHL to output incorrect results. To address this new threat, this work presents design and implementation of a novel, low-overhead defense circuit for HHL. By adding a single ancilla qubit and minimal gates, the proposed defense reliably detects both IIA and HEA regardless which qubits (ancilla, clock, b) they target. The proposed defense is validated in simulation and on IBM quantum hardware, demonstrating its effectiveness and resilience to noise, providing a practical pathway to securing HHL against the two types of attacks."
+tags: ["Quantum Computing"]
 featured: false
-
-# links:
-# - name: URL
-#   url: ""
-url_pdf: ''
-url_code: ''
-url_dataset: ''
-url_poster: ''
-url_project: ''
-url_slides: ''
-url_source: ''
-url_video: ''
-
-# Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder. 
-# image:
-#   caption:  ''
-#   focal_point: ''
-#   preview_only: false
-
-# Associated Projects (optional).
-#   Associate this publication with one or more of your projects.
-#   Simply enter your project's folder or file name without extension.
-#   E.g. `internal-project` references `content/project/internal-project/index.md`.
-#   Otherwise, set `projects: []`.
-# projects: []
-
-# Slides (optional).
-#   Associate this publication with Markdown slides.
-#   Simply enter your slide deck's filename without extension.
-#   E.g. `slides: "example"` references `content/slides/example/index.md`.
-#   Otherwise, set `slides: ""`.
-# slides: example
+url_pdf: "https://caslab.io/publications/tan2025securing.pdf"
 ---
 
-<!-- {{% callout note %}}
-Click the *Cite* button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-{{% /callout %}}
-
-{{% callout note %}}
-Create your slides in Markdown - click the *Slides* button to check out the example.
-{{% /callout %}}
-
-Supplementary notes can be added here, including [code, math, and images](https://wowchemy.com/docs/writing-markdown-latex/). -->

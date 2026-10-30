@@ -1,0 +1,21 @@
+{{ $page := .page }}
+{{ $class := "btn btn-outline-primary btn-page-header" }}
+{{ if .is_list }}{{ $class = printf "%s btn-sm" $class }}{{ end }}
+{{ $links := slice }}
+{{ with $page.Params.doi }}{{ $links = $links | append (dict "name" "DOI" "url" (printf "https://doi.org/%s" .)) }}{{ end }}
+{{ with $page.Params.url_pdf }}{{ $links = $links | append (dict "name" "PDF" "url" .) }}{{ end }}
+{{ range $page.Params.links }}{{ if eq .name "arXiv" }}{{ $links = $links | append . }}{{ end }}{{ end }}
+{{ with $page.Params.url_code }}{{ $links = $links | append (dict "name" "Code" "url" .) }}{{ end }}
+{{ range $page.Params.links }}{{ if ne .name "arXiv" }}{{ $links = $links | append . }}{{ end }}{{ end }}
+{{ with $page.Params.url_slides }}{{ $links = $links | append (dict "name" "Slides" "url" .) }}{{ end }}
+{{ with $page.Params.url_video }}{{ $links = $links | append (dict "name" "Video" "url" .) }}{{ end }}
+{{ range $links }}
+  {{ $url := .url }}
+  {{ if not (urls.Parse $url).Scheme }}
+    {{ with $page.Resources.GetMatch $url }}{{ $url = .RelPermalink }}{{ else }}{{ $url = $url | relURL }}{{ end }}
+  {{ end }}
+  <a class="{{ $class }}" href="{{ $url }}" target="_blank" rel="noopener">{{ .name }}</a>
+{{ end }}
+{{ with $page.Resources.GetMatch "cite.bib" }}
+<a href="#" class="{{ $class }} js-cite-modal" data-filename="{{ .RelPermalink }}">Cite</a>
+{{ end }}

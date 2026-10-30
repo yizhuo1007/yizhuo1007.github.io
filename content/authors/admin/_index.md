@@ -14,7 +14,7 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: PhD Student
+role: PhD Candidate
 
 # Organizations/Affiliations to show in About widget
 organizations:
@@ -26,21 +26,25 @@ organizations:
 
 # Interests to show in About widget
 interests:
-  - Quantum Computing Security
-  - Quantum Computing Architecture
+  - "Quantum Computer Architecture and Systems"
+  - "Quantum Error Correction"
+  - "Quantum Computing Reliability, Security, and Privacy"
 
 # Education to show in About widget
 education:
   courses:
     - course: PhD in Computer Science
       institution: Yale University
-      year: 2029 (Expected)
+      year: 2028 (Expected)
+      date_range: September 2023 – Present
     # - course: MSc, MPhil in Electrical Engineering
     #   institution: Yale University
     #   year: 2024
-    - course: BSc in Physics, Minor in Computer Science
+    - course: B.Sc. in Physics
       institution: University of Science and Technology of China (USTC)
       year: 2023
+      date_range: September 2019 – July 2023
+      details: "Atomic and Molecular Physics track<br>Minor in Computer Science and Technology"
 
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
@@ -49,7 +53,7 @@ education:
 social:
   - icon: envelope
     icon_pack: fas
-    link: '/#contact'
+    link: 'mailto:yizhuo.tan@yale.edu'
   - icon: twitter
     icon_pack: fab
     link: https://x.com/yizhuo1007
@@ -76,7 +80,7 @@ social:
   # # and uncomment the lines below.
   - icon: cv
     icon_pack: ai
-    # link: uploads/resume.pdf
+    link: '/uploads/yizhuo-tan-cv.pdf'
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: 'yizhuo.tan@yale.edu'
@@ -85,5 +89,11 @@ email: 'yizhuo.tan@yale.edu'
 highlight_name: true
 ---
 
-I am a third-year Ph.D. student dedicated to exploring the critical challenges in quantum computing security and systems. My research, conducted jointly at the Quantum Systems Lab, Yale University, and the Computer Architecture and Security Lab, Northwestern University, investigates the vulnerabilities within quantum computing hardware and algorithms. I would like to explore oblivious QRAM and QEC in the future!
-{style="text-align: justify;"}
+Hi! I'm Yizhuo, a fourth-year Ph.D. student in Computer Science at Yale University, advised by Prof. Jakub Szefer (Northwestern University) and Prof. Yongshan Ding.
+
+My research aims to enable reliable, scalable, and efficient quantum computation. I study how physical device properties, qubit interactions, and hardware constraints shape quantum system design. I examine how physical errors affect computational behavior and performance at both the circuit and logical levels, with particular interest in quantum error correction. I also investigate reliability, security, and privacy challenges, including unwanted interference and information leakage, and explore methods for protecting quantum computations and data.
+
+Thanks for visiting my website! Feel free to [reach out](mailto:yizhuo.tan@yale.edu) if you’d like to exchange ideas, ask a question, or just say hello.
+
+**I am currently seeking internship and research visit opportunities for Summer 2027.**
+

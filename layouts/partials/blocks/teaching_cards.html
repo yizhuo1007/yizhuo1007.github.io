@@ -1,0 +1,18 @@
+{{ $block := .wcBlock }}
+<div class="col-12 {{ if eq ($block.design.columns | default "2") "2" }}col-lg-8{{ end }}">
+  {{ range $index, $item := $block.content.items }}
+  <article class="card experience course teaching-card" aria-labelledby="teaching-course-{{ $index }}">
+    <div class="card-body">
+      <div class="teaching-school">
+        {{ $logo := resources.Get (printf "media/icons/brands/%s" .school_logo) }}
+        {{ if not $logo }}{{ errorf "Teaching logo not found: %s" .school_logo }}{{ end }}
+        <img class="teaching-logo" src="{{ $logo.RelPermalink }}" width="40" height="40" alt="{{ .school }} logo" loading="lazy">
+        <a href="{{ .school_url }}" target="_blank" rel="noopener">{{ .school }}</a>
+      </div>
+      <h3 id="teaching-course-{{ $index }}" class="section-subheading card-title exp-title my-0">{{ with .url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end }}{{ .title }}{{ with .url }}</a>{{ end }}</h3>
+      <p class="teaching-meta">{{ .role }}<span class="middot-divider"></span>{{ .term }}</p>
+      {{ with .instructors }}<p class="teaching-instructors">{{ . }}</p>{{ end }}
+    </div>
+  </article>
+  {{ end }}
+</div>

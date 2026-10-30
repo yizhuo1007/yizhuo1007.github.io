@@ -1,0 +1,17 @@
+{{- define "main" -}}
+{{ partial "page_header.html" . }}
+<div class="universal-wrapper">
+  <nav class="mb-4" aria-label="Publication categories">
+    <a href="#peer-reviewed">Peer-reviewed Publications</a> · <a href="#preprints">Preprints &amp; Manuscripts</a>
+  </nav>
+  {{ range $group := slice (dict "id" "peer-reviewed" "title" "Peer-reviewed Publications" "type" "1") (dict "id" "preprints" "title" "Preprints & Manuscripts" "type" "3") }}
+  <section id="{{ $group.id }}" class="mb-5" style="scroll-margin-top: 90px">
+    <span id="{{ $group.type }}"></span>
+    <h2 class="mb-4">{{ $group.title }}</h2>
+    {{ range where $.RegularPages.ByDate.Reverse "Params.publication_group" $group.id }}
+      {{ partial "views/citation.html" (dict "item" .) }}
+    {{ end }}
+  </section>
+  {{ end }}
+</div>
+{{- end -}}

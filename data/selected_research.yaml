@@ -1,0 +1,57 @@
+projects:
+  - id: qldpc
+    title: Logical Operation Identification in qLDPC Codes
+    description: >-
+      I study what syndrome histories reveal about logical operations in qLDPC codes.
+      I developed likelihood-based inference using exact fault marginalization and scalable approximations to identify logical instructions and circuits while reducing computation and memory costs.
+      I also analyzed identification limits and evaluated refinements for cases with low identification accuracy.
+    papers:
+      - reference: /publication/qldpc2026
+        label: Manuscript · 2026
+        details_label: Manuscript details
+  - id: epar
+    image:
+      filename: research/epar-workflow.png
+      caption: EPAR workflow · Fig. 1
+      source: https://arxiv.org/html/2603.25671v1#S1.F1
+      alt: EPAR workflow connecting physical layout, electromagnetic simulation, effective Hamiltonians, and reliability evaluation.
+    title: Superconducting Processor Modeling and Reliability
+    acronym: EPAR
+    description: >-
+      EPAR predicts how physical layout affects the robustness of superconducting quantum processors by connecting electromagnetic modeling, effective Hamiltonians, and control-pulse response.
+      I co-developed the framework and constructed superconducting circuit models and chip layouts from target Hamiltonians, including layout implementation in Qiskit Metal.
+      The framework quantifies deviations between intended and effective qubit connectivity and the sensitivity of parasitic couplings to local parameter variations.
+    papers:
+      - reference: /publication/dac2026
+        label: DAC · 2026
+  - id: oqram
+    image:
+      filename: research/oqram-system.png
+      caption: OQRAM system model · Fig. 2
+      source: https://arxiv.org/html/2607.27171v1#S3.F2
+      alt: OQRAM system model showing a resource-limited client delegating quantum queries to a server and the privacy and integrity threats.
+    title: Private Delegated Quantum Queries
+    acronym: OQRAM
+    description: >-
+      OQRAM protects delegated coherent quantum queries for clients with limited quantum resources.
+      I co-designed protocols using encrypted and shuffled database layouts with quantum-secure address masking, and co-developed their security and resource analyses.
+      These analyses establish online quantum communication linear in the combined address and ciphertext register widths and quantify classical database refresh costs.
+    papers:
+      - reference: /publication/oqram2026
+        label: arXiv preprint · 2026 · Equal contribution
+  - id: hardware
+    image:
+      filename: research/qubithammer-overview.png
+      caption: QubitHammer shared-hardware model · Fig. 1(a)
+      source: https://arxiv.org/html/2504.07875v2#S1.F1
+      alt: QubitHammer threat model showing victim and adversarial circuits running on shared quantum hardware.
+    title: Quantum Hardware Reliability and Security
+    description: >-
+      I investigate how unwanted interactions between superconducting qubits affect workload isolation and leak information.
+      In QubitHammer, I designed and validated pulse-level attacks on IBM and Rigetti processors and implemented Rigetti experiment workflows in Python with Amazon Braket for calibration retrieval, hardware execution, and measurement analysis.
+      In separate readout-crosstalk work, I characterized correlations between measurement outcomes to quantify crosstalk and information leakage.
+    papers:
+      - reference: /publication/qubithammer2026
+        label: QubitHammer · HOST 2026
+      - reference: /publication/qsec2025
+        label: Readout crosstalk · QSec@CCS 2025

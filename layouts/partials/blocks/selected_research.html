@@ -1,0 +1,37 @@
+<div class="col-12 research-home">
+  {{ range $index, $project := site.Data.selected_research.projects }}
+  <article id="{{ .id }}" class="research-project{{ if not .image }} research-project-text-only{{ end }}" aria-labelledby="{{ .id }}-title">
+    <div class="research-project-body">
+      <h2 id="{{ .id }}-title">{{ .title }}{{ with .acronym }} <span class="research-acronym">({{ . }})</span>{{ end }}</h2>
+      <p class="research-description">{{ .description }}</p>
+      <div class="research-materials">
+        {{ range .papers }}
+          {{ $paper := site.GetPage .reference }}
+          {{ if not $paper }}{{ errorf "Research project references missing publication: %s" .reference }}{{ end }}
+          <div class="research-paper">
+            <p class="research-paper-label">{{ .label }}{{ with $paper.Params.award }} <span class="research-award">{{ . }}</span>{{ end }}</p>
+            <div class="research-links" role="group" aria-label="Resources for {{ $paper.Title }}">
+              <a class="btn btn-outline-primary btn-sm" href="{{ $paper.RelPermalink }}">{{ .details_label | default "Paper details" }}</a>
+              {{ with $paper.Params.doi }}<a class="btn btn-outline-primary btn-sm" href="https://doi.org/{{ . }}" target="_blank" rel="noopener">DOI</a>{{ end }}
+              {{ range $paper.Params.links }}{{ if eq .name "arXiv" }}<a class="btn btn-outline-primary btn-sm" href="{{ .url }}" target="_blank" rel="noopener">arXiv</a>{{ end }}{{ end }}
+              {{ with $paper.Params.url_code }}<a class="btn btn-outline-primary btn-sm" href="{{ . }}" target="_blank" rel="noopener">Code</a>{{ end }}
+              {{ range $paper.Params.links }}{{ if eq .name "Demo" }}<a class="btn btn-outline-primary btn-sm" href="{{ .url }}" target="_blank" rel="noopener">Demo notebook</a>{{ end }}{{ end }}
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+    {{ with .image }}
+      {{ $image := resources.Get (printf "media/%s" .filename) }}
+      {{ if not $image }}{{ errorf "Research figure not found: %s" .filename }}{{ end }}
+      {{ $thumbnail := $image.Fit "1200x850 webp" }}
+      <figure class="research-figure">
+        <a class="research-figure-link" href="{{ $image.RelPermalink }}" target="_blank" rel="noopener" aria-label="Enlarge figure: {{ .caption }}">
+          <img src="{{ $thumbnail.RelPermalink }}" width="{{ $thumbnail.Width }}" height="{{ $thumbnail.Height }}" alt="{{ .alt }}" loading="lazy">
+        </a>
+        <figcaption><a href="{{ .source }}" target="_blank" rel="noopener">{{ .caption }}</a><span class="figure-enlarge-note">Click image to enlarge</span></figcaption>
+      </figure>
+    {{ end }}
+  </article>
+  {{ end }}
+</div>
