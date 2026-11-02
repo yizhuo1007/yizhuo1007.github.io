@@ -351,7 +351,7 @@ sections:
         postcode: '06511'
         country: United States
         country_code: US
-      directions: 5th Floor, Arthur K. Watson Hall (AKW), Yale University
+      directions: 3rd Floor, Arthur K. Watson Hall (AKW), Yale University
       # Choose a map provider in `params.yaml` to show a map from these coordinates
       coordinates:
         latitude: '41.3130868'
